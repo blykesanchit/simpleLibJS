@@ -40,6 +40,10 @@ Display.prototype.showMsg = function (type, msg) {
                             <strong>Message: </strong>${msg}
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div>`;
+    //adding the timeout feature of this msgBox
+    setTimeout(() => {
+        msgBox.innerHTML='';
+    }, 2000);//2000ms
 }
 
 
@@ -80,3 +84,7 @@ libraryForm.addEventListener("submit", function libraryFormSubmit(e) {
 });
 
 
+// Todos"
+// 1. Store all the data to the localStorage
+// 2. Give another column as an option to delete the book
+// 3. Add a scroll bar to the view
